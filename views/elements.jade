@@ -1,0 +1,27 @@
+doctype
+html(lang='en')
+	head
+		title With headers and sections
+	body
+		h1 Jade view engine
+		p
+			| the dade view engine is aimed at minmizing the amount of characters
+			| we need to type in order to get HTML outputted to the screen
+		h2 Element support
+
+		div#elements Apart from paragrah it also supports containers
+
+		#other_elements
+			| in fact we don't even need to use the div prefix for it
+		.items Divs can have classes too
+
+			| Even this like list, et al.
+			ul
+				li First element
+				li Second element
+				li Third element
+		p
+		p
+			a(href='http://google.com') links can also be used
+		p And even used in context as in 
+			a(href='http://google.com') this example (you need to deactive trimming)

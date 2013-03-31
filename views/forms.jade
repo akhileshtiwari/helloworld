@@ -1,0 +1,32 @@
+doctype
+html(land='en')
+	head
+		title Forms
+	body
+		p
+			| When you need to start something on a new line
+			| you use the vertical bar
+
+		form(method='POST',action='/')
+		.inputpair#name
+			label(for='name') Name
+			input(name='name',id='name')
+		.inputpair#name
+			label(for='email') Email
+			input(type='email',id='email')
+		.inputpair#name
+			label(for='password') Password
+			input(type='password',id='password')
+		.inputpair#name
+			label(for='type') Type
+			select(name='type')
+				option(value='dev') Developer
+				option(value='qa') Tester
+				option(value='man') Manager
+		.inputpair#name
+			label(for='signup') Available?
+			input(
+				type='checkbox'
+				id='available'
+				checked)
+		input(type='submit',value='Create')
